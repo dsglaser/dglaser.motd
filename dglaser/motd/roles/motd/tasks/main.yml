@@ -1,0 +1,8 @@
+---
+    - name: Set up Message of the Day
+      copy:
+        src: motd.skel
+        dest: /etc/motd
+        oner: root
+        group: root
+        mode: 0644
